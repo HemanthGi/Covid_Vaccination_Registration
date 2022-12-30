@@ -1,5 +1,6 @@
 # DevRev_Assignment
 This WebApp is used to book the covid vaccine slot near by locations .
+
 FOR ADMIN Login:
 * for admin signup, give the name as admin and mail as : admin@admin.com
 * Set Password for the admin 
