@@ -1,0 +1,10 @@
+Application
+flask
+werkzeug.security
+bson.objectid
+base64
+codecs
+json
+pymongo
+gridfs
+os

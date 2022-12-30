@@ -1,0 +1,16 @@
+.voting {
+	margin: auto;
+}
+
+.issueitem{
+	 border-radius: 10px;
+	 box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+}
+
+.issueimage{
+	border-radius: 10px 0px 0px 10px;
+}
+.satya{
+/*	background-image: url(‘path/image.jpg’);*/
+	 background-size: cover;
+ background-repeat: no-repeat;}

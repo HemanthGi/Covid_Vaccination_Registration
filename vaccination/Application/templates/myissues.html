@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head%}
+<title>My Issues</title>
+<link rel="stylesheet" href="static\css\issuess.css">
+{% endblock %}
+
+{% block body %}
+    {% with messages = get_flashed_messages(with_categories = true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{category}}">
+                    <p>
+                        <b>
+                        {{message}}
+                        </b>
+                    </p>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+<div style="margin:1% auto;">
+    <div class="container" >
+    </br>
+    
+{% for info in infos %}
+    <div class="card issueitem">
+        <div class="row no-gutters">
+            <div class="col-sm-3" style="background: cyan;">
+                <h1 class="text-center pt-5">{{info['location']}}</h1>
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    
+                    <p class="card-text">Details: {{info['details']}}</p>
+                    <p class="card-text">Location: {{info['location']}}</p>
+                    <p class="card-text">Date and Time: {{info['date']}}</p>
+                    <a href="/editissue/{{info['_id']}}" class="btn btn-primary btn-sm ">Edit</a>
+                    <a href="/deleteissue/{{info['_id']}}" class="btn btn-danger btn-sm ">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+{% endfor%}    
+    </div>
+</div>
+{% endblock %}
+
+
