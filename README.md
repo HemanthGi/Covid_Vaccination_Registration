@@ -1,4 +1,5 @@
-# DevRev_Assignment
+#PROJECT
+
 This WebApp is used to book the covid vaccine slot near by locations .
 
 FOR ADMIN Login:
